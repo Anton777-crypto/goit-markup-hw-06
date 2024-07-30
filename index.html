@@ -34,13 +34,13 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
-     <!-- <header class="header"> 
+     <header class="header"> 
       <div class="header-div container">
         <nav class="nav">
           <a class="logo-header" href="./index.html">
             Web<span class="logo-h">Studio</span>
           </a>
-          <button class="menu-toggle" aria-label="Open Menu">&#9776;
+          
           <ul class="nav-ul">
             <li><a class="nav-li-li" href="./index.html">Studio</a></li>
             <li><a class="nav-li" href="">Portfolio</a></li>
@@ -62,10 +62,73 @@
             </li>
           </ul>
         </address>
-    </button>
-    </button>  
+        
+        <button class="menu-open-btn"  type="button"><svg class="icon-icon-m" width="24" height="24">
+          <use href="./images/icons.svg#icon-Vector3"></use>
+        </svg></button>
     </div>
-    </header>  -->
+    <div class="mod-modal  ">
+      <div>
+      <button class="menu-close-btn"  type="button"><svg class="icon-icon-m" width="24" height="24">
+        <use href="./images/icons.svg#icon-Vector3"></use>
+      </svg></button>
+      <nav>
+        <ul class="mod-ul">
+          <li><a class="mod-li-li" href="./index.html">Studio</a></li>
+          <li><a class="mod-li" href="">Portfolio</a></li>
+          <li><a class="mod-li" href="">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <ul class="mod-adress-ul">
+        <li>
+          <a class="mod-adress-a" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="mod-adress-a-a" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        </ul>
+      
+      
+      <ul class="modal-ul">
+        <li class="modal-ul-li">
+          <a href="" class="modal-ul-li-a">
+            <svg class="modal-ul-li-a-svg"  width="40" height="40">
+              <use href="./images/icons.svg#icon-instagram2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-ul-li">
+          <a href="" class="modal-ul-li-a" >
+            <svg class="modal-ul-li-a-svg" width="40" height="40">
+              <use href="./images/icons.svg#icon-twitter1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-ul-li">
+          <a href="" class="modal-ul-li-a">
+            <svg class="modal-ul-li-a-svg" width="40" height="40">
+              <use href="./images/icons.svg#icon-facebook1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-ul-li">
+          <a href="" class="modal-ul-li-a">
+            <svg class="modal-ul-li-a-svg"width="40" height="40">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+     </header> 
     <main>
       <!-- Section  -->
        <section class="header-section"> 
@@ -141,6 +204,8 @@
           <ul class="section-three-ul">
             <li class="section-three-li">
               <img
+                srcset="./images/img-4min.jpg 1x, ./images/img2-2x.jpg  2x"
+        
                 src="./images/img-4min.jpg"
                 width="264"
                 height="260"
@@ -185,6 +250,7 @@
 
             <li class="section-three-li">
               <img
+              srcset="./images/img-2min.jpg 1x, ./images/img-2-2x.jpg 2x"
                 src="./images/img-2min.jpg"
                 width="264"
                 height="260"
@@ -228,6 +294,7 @@
             </li>
             <li class="section-three-li">
               <img
+              srcset="./images/img-min.jpg 1x, ./images/img-2x.jpg 2x"
                 src="./images/img-min.jpg"
                 width="264"
                 height="260"
@@ -271,6 +338,7 @@
             </li>
             <li class="section-three-li">
               <img
+              srcset="./images/img3min.jpg  1x, ./images/img-3-2x.jpg 2x"
                 src="./images/img3min.jpg"
                 width="264"
                 height="260"
@@ -324,11 +392,17 @@
           <ul class="section-four-ul">
             <li class="section-four-li">
               <div class="c-ul-li-card">
+                <picture>
+                  <source srcset="./images/section3/img.jpg 1x, ./images/section3/img-2x.jpg  2x" media="(min-width:1158px)"/>
+                  <source srcset="./images/section3/plan/img.jpg 1x, ./images/section3/plan/img-2x,jpg  2x" media="(min-width:768px)"/>
+                  <source srcset="./images/section3/mob/img1-1x.jpg  1x, ./images/section3/mob/img1-2x.jpg  2x" media="(max-width:767px)"/>
+               
                 <img
                   src="./images/section3/img.jpg"
                   width="360"
                   alt="Banking app"
                 />
+              </picture>
                 <p class="c-ul-li-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -343,11 +417,16 @@
 
             <li class="section-four-li">
               <div class="c-ul-li-card">
+                <picture>
+                  <source srcset="./images/section3/img-2.jpg 1x, ./images/section3/img2-2x.jpg  2x" media="(min-width:1158px)"/>
+                  <source srcset="./images/section3/plan/img2-1x.jpg 1x, ./images/section3/plan/img2-2x.jpg  2x" media="(min-width:768px)"/>
+                  <source srcset="./images/section3/mob/img2-1x.jpg  1x, ./images/section3/mob/img2-2x.jpg 2x" media="(max-width:767px)"/>
                 <img
                   src="./images/section3/img-2.jpg"
                   width="360"
                   alt="Cashless Payment"
                 />
+                </picture>
                 <p class="c-ul-li-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -361,11 +440,16 @@
             </li>
             <li class="section-four-li">
               <div class="c-ul-li-card">
+                <picture>
+                  <source srcset="./images/section3/img-3.jpg 1x, ./images/section3/img3-2x.jpg  2x" media="(min-width:1158px)"/>
+                  <source srcset="./images/section3/plan/img3-1x.jpg 1x, ./images/section3/plan/img3-2x.jpg  2x" media="(min-width:768px)"/>
+                  <source srcset="./images/section3/mob/img3-1x.jpg  1x, ./images/section3/mob/img3-2x.jpg 2x" media="(max-width:767px)"/>
                 <img
                   src="./images/section3/img-3.jpg"
                   width="360"
                   alt="Meditation App"
                 />
+                </picture>
                 <p class="c-ul-li-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -380,11 +464,16 @@
 
             <li class="section-four-li">
               <div class="c-ul-li-card">
+                <picture>
+                  <source srcset="./images/section3/img-4.jpg 1x, ./images/section3/img4-2x.jpg  2x" media="(min-width:1158px)"/>
+                  <source srcset="./images/section3/plan/img4-1x.jpg 1x, ./images/section3/plan/img4-2x.jpg  2x" media="(min-width:768px)"/>
+                  <source srcset="./images/section3/mob/img4-1x.jpg  1x, ./images/section3/mob/img4-2x.jpg 2x" media="(max-width:767px)"/>
                 <img
                   src="./images/section3/img-4.jpg"
                   width="360"
                   alt="Texi Service"
                 />
+                </picture>
                 <p class="c-ul-li-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -398,11 +487,16 @@
             </li>
             <li class="section-four-li">
               <div class="c-ul-li-card">
+                <picture>
+                  <source srcset="./images/section3/img-5.jpg 1x, ./images/section3/img5-2x.jpg  2x" media="(min-width:1158px)"/>
+                  <source srcset="./images/section3/plan/img5-1x.jpg 1x, ./images/section3/plan/img5-2x.jpg  2x" media="(min-width:768px)"/>
+                  <source srcset="./images/section3/mob/img5-1x.jpg  1x, ./images/section3/mob/img5-2x.jpg 2x" media="(max-width:767px)"/>
                 <img
                   src="./images/section3/img-5.jpg"
                   width="360"
                   alt="Screen Illustrations"
                 />
+                </picture>
                 <p class="c-ul-li-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -416,11 +510,16 @@
             </li>
             <li class="section-four-li">
               <div class="c-ul-li-card">
+                <picture>
+                  <source srcset="./images/section3/img-6.jpg 1x, ./images/section3/img6-2x.jpg  2x" media="(min-width:1158px)"/>
+                  <source srcset="./images/section3/plan/img6-1x.jpg 1x, ./images/section3/plan/img6-2x.jpg  2x" media="(min-width:768px)"/>
+                  <source srcset="./images/section3/mob/img6-1x.jpg  1x, ./images/section3/mob/img6-2x.jpg 2x" media="(max-width:767px)"/>
                 <img
                   src="./images/section3/img-6.jpg"
                   width="360"
                   alt="Online Courses"
                 />
+                </picture>
                 <p class="c-ul-li-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -504,7 +603,10 @@
         </div>
       </div>
     </footer>  
-    <!-- <div class="backdrop">
+
+
+    
+    <div class="backdrop is-close">
       <div class="modal">
         <button class="btn-modal" type="button">
           <svg class="btn-modal-svg" width="8" height="8">
@@ -586,7 +688,7 @@
           </div>
           <button class="btn-modal-a">Send</button>
         </form>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>

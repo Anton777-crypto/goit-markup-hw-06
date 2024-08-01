@@ -1029,9 +1029,13 @@ ol {
   }
   .section-two-h {
     display: block;
+    text-align: justify;
   }
   .section-two-ul {
     gap: 0px;
+  }
+  .section-two-p {
+    width: 356px;
   }
 }
 @media screen and (min-width: 1128px) {
@@ -1062,6 +1066,10 @@ ol {
     width: 768px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .section-three {
+    padding-bottom: 96px;
+    padding-top: 96px;
   }
 
   .section-three-ul {
@@ -1160,6 +1168,7 @@ ol {
 
   .footer-div {
     gap: 0 24px;
+    padding-left: 108px;
   }
 }
 @media screen and (min-width: 1158px) {
